@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-// import { getRandomThrow } from './get-random-throw';
+import { getRandomThrow } from './get-random-throw.js';
 
 
 
@@ -16,6 +16,9 @@ playButton.addEventListener('click', ()=>{
   const selected = document.querySelector('input[type=radio]:checked');
   const userMove = selected.value;
   console.log(userMove);
+  
+  const compMove = getRandomThrow();
+  console.log(compMove)
    
 
 })
