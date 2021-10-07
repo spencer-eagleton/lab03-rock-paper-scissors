@@ -15,6 +15,12 @@ input[type=radio]:checked + img {
         filter: drop-shadow(0px 0px 10px #ffffff);
 }
 
+input[type=radio]:hover + img {
+    animation: bounce 0.5s infinite alternate;
+}
+
+
+@keyframes bounce { 0% { transform: translateY(0); } 100% { transform: translateY(-20px); } }
 
 main {
     display: flex;
@@ -57,3 +63,4 @@ button {
     width: 150px;
     height: 75;
 }
+
