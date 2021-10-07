@@ -9,32 +9,41 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+
     <title>Rock Paper Scissors</title>
 </head>
 
 <body>
-    
-    <h1>Rock Paper Scissors!</h1>
-    <section>   
-        <label>
-            <input class="hidden" type="radio" name="choices" id="Rock" value="rock"><img src="./assets/rock.png" alt="rock" width="200px">
-        </label>    
-        <label>
-                <input class="hidden" type="radio" name="choices" id="Paper" value="paper"><img src="./assets/6c42342a8a0770f3d908ce9480abfd71.png" alt="paper" width="200px">
-        </label>    
-        <label>
-                <input class="hidden" type="radio" name="choices" id="Scissors" value="scissors"><img src="./assets/scissors2.png" alt="scissors" width="200px">
-        </label>        
-    </section>    
-    
-    
-    <button id="play-button">Play!</button>
-    <p id="result-display"></p>
-    <p>Wins: <span id="wins">0</span></p>  
-    <p>Losses: <span id="losses">0</span></p> 
-    <p>Draws: <span id="draws">0</span></p> 
-        <script type="module" src="./app.js"></script>
+    <main>
+        <h1>Rock Paper Scissors!</h1>
+        <section id="selections">   
+            <label class="selections">
+                <input class="hidden" type="radio" name="choices" id="Rock" value="rock"><img src="./assets/rock.png" alt="rock" width="200px">
+            </label>    
+            <label class="selections">
+                    <input class="hidden" type="radio" name="choices" id="Paper" value="paper"><img src="./assets/6c42342a8a0770f3d908ce9480abfd71.png" alt="paper" width="200px">
+            </label>    
+            <label class="selections">
+                    <input class="hidden" type="radio" name="choices" id="Scissors" value="scissors"><img src="./assets/scissors2.png" alt="scissors" width="200px">
+            </label>        
+        </section>    
         
+        
+        <button id="play-button">Try your luck!</button>
+        <p id="result-display"></p>
+       <section id="scoreboard">
+            <p class="scores">Wins: <span id="wins">0</span></p>  
+            <p class="scores">Losses: <span id="losses">0</span></p> 
+            <p class="scores">Draws: <span id="draws">0</span></p> 
+        </section>             
+        
+        
+        
+        <script type="module" src="./app.js"></script>
+    </main>    
 </body>
 
 </html>

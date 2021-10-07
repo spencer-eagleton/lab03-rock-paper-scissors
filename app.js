@@ -27,12 +27,12 @@ playButton.addEventListener('click', ()=>{
   console.log(result)
 
   if (result === 1) {
-    resultDisplay.textContent = 'You\'re a winner!';
+    resultDisplay.textContent = 'WOW! You\'re a winner!';
     wins++;
     totalWins.textContent = wins;
     
   } else if (result === -1) {
-    resultDisplay.textContent = 'You\'re a LOOOSER!';
+    resultDisplay.textContent = 'HAHA You\'re a LOOOSER!';
     losses++;
     totalLosses.textContent = losses;
 
