@@ -16,33 +16,30 @@ let draws = 0;
 // set event listeners 
 
 playButton.addEventListener('click', ()=>{
-  const selected = document.querySelector('input[type=radio]:checked');
-  const userMove = selected.value;
-  console.log(userMove);
+    const selected = document.querySelector('input[type=radio]:checked');
+    const userMove = selected.value;
   
-  const compMove = getRandomThrow();
-  console.log(compMove)
-  
-  const result = didUserWin(userMove, compMove);
-  console.log(result)
-
-  if (result === 1) {
-    resultDisplay.textContent = 'WOW! You\'re a winner!';
-    wins++;
-    totalWins.textContent = wins;
+    const compMove = getRandomThrow();
     
-  } else if (result === -1) {
-    resultDisplay.textContent = 'HAHA You\'re a LOOOSER!';
-    losses++;
-    totalLosses.textContent = losses;
+    const result = didUserWin(userMove, compMove);
 
-  } else {
-    resultDisplay.textContent = 'It\'s a draw, play again!';
-    draws++;
-    totalDraws.textContent = draws;
-  }
+    if (result === 1) {
+        resultDisplay.textContent = 'WOW! You\'re a winner!';
+        wins++;
+        totalWins.textContent = wins;
+    
+    } else if (result === -1) {
+        resultDisplay.textContent = 'HAHA You\'re a LOOOSER!';
+        losses++;
+        totalLosses.textContent = losses;
 
-})
+    } else {
+        resultDisplay.textContent = 'It\'s a draw, play again!';
+        draws++;
+        totalDraws.textContent = draws;
+    }
+
+});
   // get user input
   // use user input to update state 
   // update DOM to reflect the new state
