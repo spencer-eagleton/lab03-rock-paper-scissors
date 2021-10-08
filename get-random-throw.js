@@ -1,5 +1,5 @@
 export function getRandomThrow(){
-    return ['rock', 'paper', 'scissors'][Math.floor(Math.random() * 3)]
+    return ['rock', 'paper', 'scissors'][Math.floor(Math.random() * 3)];
 
 }
 
@@ -19,7 +19,7 @@ export function didUserWin(userMove, compMove){
     
     
     else {
-        return -1
+        return -1;
     }
 
 }
