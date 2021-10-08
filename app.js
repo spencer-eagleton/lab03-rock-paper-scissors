@@ -8,6 +8,7 @@ const totalWins = document.getElementById('wins');
 const totalLosses = document.getElementById('losses');
 const totalDraws = document.getElementById('draws');
 const resultDisplay = document.getElementById('result-display');
+const resetScore = document.getElementById('reset-scores');
 
 // initialize global state
 let wins = 0;
@@ -40,6 +41,18 @@ playButton.addEventListener('click', ()=>{
     }
 
 });
-  // get user input
+
+resetScore.addEventListener('click', ()=>{
+    wins = 0;
+    losses = 0;
+    draws = 0;
+
+    totalWins.textContent = 0;
+    totalLosses.textContent = 0;
+    totalDraws.textContent = 0;
+
+
+});
+   // get user input
   // use user input to update state 
   // update DOM to reflect the new state

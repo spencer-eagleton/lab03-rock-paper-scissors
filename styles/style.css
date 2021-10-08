@@ -51,6 +51,7 @@ h1 {
 
 #result-display {
     font-size: 60px;
+    margin: -5px;
 }
 
 .scores {
@@ -62,5 +63,6 @@ button {
 
     width: 150px;
     height: 75;
+    margin: 10px;
 }
 
