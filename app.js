@@ -9,11 +9,13 @@ const totalLosses = document.getElementById('losses');
 const totalDraws = document.getElementById('draws');
 const resultDisplay = document.getElementById('result-display');
 const resetScore = document.getElementById('reset-scores');
+const resetTimes = document.getElementById('resets');
 
 // initialize global state
 let wins = 0;
 let losses = 0;
 let draws = 0;
+let resets = 0;
 // set event listeners 
 
 playButton.addEventListener('click', ()=>{
@@ -50,6 +52,9 @@ resetScore.addEventListener('click', ()=>{
     totalWins.textContent = 0;
     totalLosses.textContent = 0;
     totalDraws.textContent = 0;
+
+    resets++;
+    resetTimes.textContent = resets;
 
 
 });
